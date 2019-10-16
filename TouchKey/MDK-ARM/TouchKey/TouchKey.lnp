@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"touchkey\startup_stm32f407xx.o"
+"touchkey\tpad.o"
+"touchkey\main.o"
+"touchkey\stm32f4xx_it.o"
+"touchkey\stm32f4xx_hal_msp.o"
+"touchkey\stm32f4xx_hal_tim.o"
+"touchkey\stm32f4xx_hal_tim_ex.o"
+"touchkey\stm32f4xx_hal_uart.o"
+"touchkey\stm32f4xx_hal_rcc.o"
+"touchkey\stm32f4xx_hal_rcc_ex.o"
+"touchkey\stm32f4xx_hal_flash.o"
+"touchkey\stm32f4xx_hal_flash_ex.o"
+"touchkey\stm32f4xx_hal_flash_ramfunc.o"
+"touchkey\stm32f4xx_hal_gpio.o"
+"touchkey\stm32f4xx_hal_dma_ex.o"
+"touchkey\stm32f4xx_hal_dma.o"
+"touchkey\stm32f4xx_hal_pwr.o"
+"touchkey\stm32f4xx_hal_pwr_ex.o"
+"touchkey\stm32f4xx_hal_cortex.o"
+"touchkey\stm32f4xx_hal.o"
+"touchkey\stm32f4xx_hal_exti.o"
+"touchkey\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TouchKey\TouchKey.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TouchKey.map" -o TouchKey\TouchKey.axf
